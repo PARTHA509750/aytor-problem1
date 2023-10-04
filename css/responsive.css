@@ -1,0 +1,18 @@
+@media (min-width: 320px) and (max-width: 575px){
+    #banner .banner-slide{
+        height: 500px;
+    }
+    #banner .banner-slide h2 {
+        font-size: 50px;
+        
+    } 
+    .banner-slide h5 {
+         font-size: 25px;
+    }
+    #banner .banner-slide p {
+         font-size: 20px;
+    }
+    #banner .bannerDots li button {
+        display: none;
+    }
+}

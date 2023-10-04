@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;0,700;1,300&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+/**VERIABLES STARTS HERE */
+:root{
+    --primaryFont: 'Josefin Sans', sans-serif;
+    --secondaryFont: 'Roboto', sans-serif;
+    --primaryColor: #FF6F61;
+    --textColor: #11161E;
+}
+/**VERIABLES ENDS HERE */
+
+/** COMMON CSS STARTS HERE */
+
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,p,span,ol{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--primaryFont);
+}
+
+/** COMMON CSS ENDS HERE */
+
+
+/** Website Nmae :-Aytor E-Commerce*/
+/** Developer Name:- Partha Sarker */
+/** 1. HOME
+        * navbar
+        *banner
+         */
+
+/**HOME PAGE STARTS HERE */
+
+/**NAVBAR STARTS HERE */
+.myCustomNavbar .icons li{
+    display: inline-block;
+}
+.myCustomNavbar #navbarMenu ul li a{
+    padding: 37px 22.5px;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--textColor);
+}
+.myCustomNavbar #navbarMenu ul li:hover a{
+    color: var(--primaryColor);
+}
+
+.myCustomNavbar .icons .test-class{
+    position: relative;
+}
+.myCustomNavbar .icons span, 
+.myCustomNavbar .icons li a,
+.sm-navbar .icons span, 
+.sm-navbar .icons li a
+{
+    color: #151A32;
+    margin: 0 10px;
+    position: relative;
+    font-size: 24px;
+}
+
+.myCustomNavbar .icons li a .cartNumber,.sm-navbar .icons ul li a span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 17px;
+    background-color: var(--primaryColor);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: -7px;
+    right: -14px;
+    font-size: 14px;
+}
+.sm-navbar .bargerMenu button{
+    border: none;
+    background-color: white;
+}
+.sm-navbar .sm-menuBardegine ul li a{
+    color: var(--textColor);
+    padding: 15px 10px;
+    display: block;
+    font-weight: 600;
+    border-bottom: 1px solid orangered;
+}
+.sm-navbar .sm-menuBardegine ul li:last-child a{
+    border: none;
+}
+.sm-navbar ul li:hover a{
+    color: var(--primaryColor);
+    
+}
+
+/**NAVBAR ENDS HERE */
+
+
+
+/**BANNER STARTS HERE  */
+#banner .banner-slide{
+    height: 800px;
+}
+.banner-slide h5{
+ color: #1D1D1D;
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 28px;
+ transition-delay: 0.2s;
+ word-wrap: break-word
+ 
+}
+#banner .banner-slide h2{
+ color: #1D1D1D;
+ margin: 14px 0 16px 0;
+ font-size: 64px;
+ font-weight: 700;
+ line-height: 74px;
+ transition-delay: 0.3s;
+ word-wrap: break-word
+}
+#banner .banner-slide p{
+ color: #1D1D1D;
+ font-size: 16px;
+ font-family: var(--secondaryFont);
+ font-weight: 400;
+ line-height: 28px;
+ transition-delay: 0.35s;
+ word-wrap: break-word
+}
+#banner .banner-slide a{
+ color: white;
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 30px;
+ word-wrap: break-word;
+ margin-top: 29px;
+ background-color: var(--primaryColor);
+ text-align: center;
+ padding: 13px 37px;
+ display: inline-block;
+ transition-delay: 0.4s; 
+}
+
+#banner .bannerDots{
+    position: absolute;
+    bottom: 25%;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#banner .bannerDots li{
+    display: inline-block;
+}
+
+#banner .bannerDots li button{
+    border: none;
+    color: transparent;
+    width: 10px;
+    height: 6px;
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+
+#banner .bannerDots li.slick-active button{
+    background-color: var(--primaryColor);
+    width: 28px;
+    transition: 0.3s;
+
+}
+
+#banner .banner-slide *{
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in;
+}
+#banner .banner-slide.slick-active *{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}  
+
+
+
+
+/**BANNER ENDS HERE  */
+
+
+/**FEATURED STARTS HERE  */
+#featured{
+    padding: 80px 0;
+}
+
+#featured .category{
+    position: relative;
+}
+
+#featured .category img{
+    width: 100%;
+}
+
+.category .overlay{
+    position: absolute;
+    background-color: rgba(17, 22, 30, 0.4);
+    inset: 20px;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.category:hover .overlay{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.category .overlay *{
+    color: white;
+}
+
+/**FEATURED ENDS HERE  */
+
+/**NEW ARRIVALS STARTS HERE */
+
+
+
+
+/**NEW ARRIVALS ENDS HERE */
+
+#newArrivals h2{  
+    color: #11161E;
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--primaryFont);
+    font-weight: 700;
+    line-height: 46px;
+    padding-bottom: 90px;   
+}
+
+.product-cnt{
+    text-align: center;
+    padding: 24px 0;
+}
+.product-cnt p{
+ color: #444444;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 26px;
+ word-wrap: break-word
+}
+.product-cnt h4{
+ color: #11161E;
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 28px;
+ word-wrap: break-word
+}
+
+.product-cnt span{
+    font-size: 12px;
+    color: var(--primaryColor);
+}
+
+.productImg img{
+    width: 100%;
+    display: block;
+}
+.productImg {
+    position: relative;
+}
+.productImg .lable{
+    position: absolute;
+    background-color: var(--primaryColor);
+    color: white;
+    transform: rotate(-90deg);
+    padding: 5px 7px 5px 12px;
+    border-radius: 25px 0 0 25px;
+    left: 15px;
+    top: 13px;
+    z-index: 99;
+}
+
+.product-cnt .overlay{
+    position: absolute;
+    background-color: rgba(17, 22, 30, 0.4);
+    inset: 0;
+}
+
+
+/**NAVBAR ENDS HERE */
+
+/**HOME PAGE ENDS HERE */
